@@ -14,8 +14,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/custom.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -117,8 +116,9 @@
                             data-bs-target="#edit-task-modal" data-source="{{item.id}}" data-content="{{item.task}}"><i
                                 class="fa fa-pen fa-1" aria-hidden="true"></i></button></td>
 
-                    <td><Delete class="btn btn-outline-secondary btn-sm remove" data-source="{{item.id}}"
-                    <i class="fas fa-trash"</i>Delete</button></td>
+                    <!--<td><button class="btn btn-outline-secondary btn-sm remove" data-source="{{item.id}}"
+                            type="button">Delete</button></td><-->
+                        <tr> <button class="btn"><i class="fa fa-trash" data-source="{{item.id}}"></i></button></tr>
                 </tr>
                 {% endfor %}
 
